@@ -13,7 +13,7 @@ import UIKit
 }
 
 class WaterfallCollectionViewLayout: UICollectionViewLayout {
-    var numberOfColumns: Int = 2
+    var numberOfColumns: Int = 3
     var sectionInset = UIEdgeInsets(top: 20, left: 20, bottom: 20, right: 20)
     var columnSpacing: CGFloat = 20
     var rowSpacing: CGFloat = 20

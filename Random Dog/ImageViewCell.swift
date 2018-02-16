@@ -19,6 +19,9 @@ class ImageViewCell: UICollectionViewCell {
                 layer.path = path.cgPath
                 return layer
             }
+        } else {
+            contentView.transform = .identity
+            layer.mask = nil
         }
 
         super.apply(layoutAttributes)
