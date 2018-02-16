@@ -13,8 +13,9 @@
 		830AEAC7202F6792004A7FD6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 830AEAC6202F6792004A7FD6 /* Assets.xcassets */; };
 		830AEACA202F6792004A7FD6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 830AEAC8202F6792004A7FD6 /* LaunchScreen.storyboard */; };
 		830AEAD2202F68A6004A7FD6 /* ImageViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 830AEAD1202F68A6004A7FD6 /* ImageViewCell.swift */; };
-		83E34CB9203206A800FDC5B4 /* CollectionViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E34CB8203206A800FDC5B4 /* CollectionViewLayout.swift */; };
-		83E34CBB203206AB00FDC5B4 /* LayoutAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E34CBA203206AB00FDC5B4 /* LayoutAttributes.swift */; };
+		83B9024C20371D4400326182 /* WaterfallCollectionViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B9024B20371D4400326182 /* WaterfallCollectionViewLayout.swift */; };
+		83E34CB9203206A800FDC5B4 /* SlantyCollectionViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E34CB8203206A800FDC5B4 /* SlantyCollectionViewLayout.swift */; };
+		83E34CBB203206AB00FDC5B4 /* SlantyCollectionViewLayoutAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E34CBA203206AB00FDC5B4 /* SlantyCollectionViewLayoutAttributes.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,8 +27,9 @@
 		830AEAC9202F6792004A7FD6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		830AEACB202F6792004A7FD6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		830AEAD1202F68A6004A7FD6 /* ImageViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewCell.swift; sourceTree = "<group>"; };
-		83E34CB8203206A800FDC5B4 /* CollectionViewLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewLayout.swift; sourceTree = "<group>"; };
-		83E34CBA203206AB00FDC5B4 /* LayoutAttributes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LayoutAttributes.swift; sourceTree = "<group>"; };
+		83B9024B20371D4400326182 /* WaterfallCollectionViewLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterfallCollectionViewLayout.swift; sourceTree = "<group>"; };
+		83E34CB8203206A800FDC5B4 /* SlantyCollectionViewLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlantyCollectionViewLayout.swift; sourceTree = "<group>"; };
+		83E34CBA203206AB00FDC5B4 /* SlantyCollectionViewLayoutAttributes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlantyCollectionViewLayoutAttributes.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,10 +62,10 @@
 		830AEABE202F6792004A7FD6 /* Random Dog */ = {
 			isa = PBXGroup;
 			children = (
+				83B9024920371D2800326182 /* Slanty */,
+				83B9024A20371D2E00326182 /* Waterfall */,
 				830AEABF202F6792004A7FD6 /* AppDelegate.swift */,
-				83E34CB8203206A800FDC5B4 /* CollectionViewLayout.swift */,
 				830AEAD1202F68A6004A7FD6 /* ImageViewCell.swift */,
-				83E34CBA203206AB00FDC5B4 /* LayoutAttributes.swift */,
 				830AEAC1202F6792004A7FD6 /* ViewController.swift */,
 				830AEAC3202F6792004A7FD6 /* Main.storyboard */,
 				830AEAC6202F6792004A7FD6 /* Assets.xcassets */,
@@ -71,6 +73,23 @@
 				830AEACB202F6792004A7FD6 /* Info.plist */,
 			);
 			path = "Random Dog";
+			sourceTree = "<group>";
+		};
+		83B9024920371D2800326182 /* Slanty */ = {
+			isa = PBXGroup;
+			children = (
+				83E34CB8203206A800FDC5B4 /* SlantyCollectionViewLayout.swift */,
+				83E34CBA203206AB00FDC5B4 /* SlantyCollectionViewLayoutAttributes.swift */,
+			);
+			name = Slanty;
+			sourceTree = "<group>";
+		};
+		83B9024A20371D2E00326182 /* Waterfall */ = {
+			isa = PBXGroup;
+			children = (
+				83B9024B20371D4400326182 /* WaterfallCollectionViewLayout.swift */,
+			);
+			name = Waterfall;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -145,11 +164,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				83E34CBB203206AB00FDC5B4 /* LayoutAttributes.swift in Sources */,
+				83E34CBB203206AB00FDC5B4 /* SlantyCollectionViewLayoutAttributes.swift in Sources */,
 				830AEAC2202F6792004A7FD6 /* ViewController.swift in Sources */,
 				830AEAD2202F68A6004A7FD6 /* ImageViewCell.swift in Sources */,
-				83E34CB9203206A800FDC5B4 /* CollectionViewLayout.swift in Sources */,
+				83E34CB9203206A800FDC5B4 /* SlantyCollectionViewLayout.swift in Sources */,
 				830AEAC0202F6792004A7FD6 /* AppDelegate.swift in Sources */,
+				83B9024C20371D4400326182 /* WaterfallCollectionViewLayout.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

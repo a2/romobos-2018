@@ -1,5 +1,5 @@
 //
-//  LayoutAttributes.swift
+//  SlantyCollectionViewLayoutAttributes.swift
 //  Random Dog
 //
 //  Created by Alexsander Akers on 1/31/18.

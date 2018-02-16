@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate {
+class ViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate, WaterfallCollectionViewLayoutDelegate {
     @IBOutlet var collectionView: UICollectionView!
 
     // MARK: - Collection View
@@ -21,5 +21,20 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "DogCell", for: indexPath) as! ImageViewCell
         cell.imageView.image = UIImage(named: "dog\(indexPath.item + 1)")
         return cell
+    }
+
+    func collectionView(_ collectionView: UICollectionView, layout: UICollectionViewLayout, aspectRatioForItemAt indexPath: IndexPath) -> CGFloat {
+        let image = UIImage(named: "dog\(indexPath.item + 1)")!
+        if image.size.height == 0 {
+            return 1
+        } else {
+            let aspectRatio = image.size.width / image.size.height
+//            Simulate portrait images by flipping aspect ratio.
+//            if indexPath.item % 3 == 0 {
+//                return 1 / aspectRatio
+//            } else {
+                return aspectRatio
+//            }
+        }
     }
 }

@@ -21,7 +21,7 @@
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="loP-Ku-c5Z">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <collectionViewLayout key="collectionViewLayout" id="0pq-s0-hcX" customClass="SlantyCollectionViewLayout" customModule="Random_Dog" customModuleProvider="target"/>
+                                <collectionViewLayout key="collectionViewLayout" id="0pq-s0-hcX" customClass="WaterfallCollectionViewLayout" customModule="Random_Dog" customModuleProvider="target"/>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="DogCell" id="sSz-3L-RZk" customClass="ImageViewCell" customModule="Random_Dog" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
