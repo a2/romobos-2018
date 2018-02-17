@@ -8,4 +8,4 @@ Alexsander Akers, me@a2.io
 
 ## License
 
-MessagePack.swift is available under the MIT license. See the LICENSE file for more info.
+Random Dog is available under the MIT license. See the LICENSE file for more info.
